@@ -1,0 +1,39 @@
+@import "../../../../scss/import.scss";
+.news-home {
+  &__options {
+    text-align: center;
+    margin: 40px 0;
+    @include flexMid;
+    position: relative;
+    li {
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.3s all;
+      padding-bottom: 10px;
+      &.active {
+        color: $blue-cl;
+      }
+    }
+    li:nth-child(2) {
+      margin: 0 44px;
+    }
+    .line {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: $blue-cl;
+      width: 100px;
+      height: 2px;
+      transition: 0.3s all;
+    }
+  }
+  &__wrapper {
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // column-gap: 24px;
+  }
+  &__button {
+    margin-top: 40px;
+    text-align: center;
+  }
+}

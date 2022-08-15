@@ -1,0 +1,10 @@
+.contact-home {
+  &__wrapper {
+    background: url("../../../../assets/images/Contact/background.png") center
+      center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}

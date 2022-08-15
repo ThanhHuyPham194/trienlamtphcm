@@ -1,0 +1,35 @@
+@import "../../scss/import.scss";
+.main-title {
+  text-align: center;
+  color: $blue-cl;
+  position: relative;
+  h2 {
+    font-family: "Desire";
+    font-size: $sz-title;
+  }
+  p {
+    position: absolute;
+    bottom: 10px;
+    left: 50% !important;
+    // transform: ;
+    font-size: $sz-watermark;
+    opacity: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+
+[data-aos="aosappear"] {
+  opacity: 0;
+  transform: translateX(-50%);
+
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 0.2;
+    transform: translateX(-50%);
+
+  }
+
+}

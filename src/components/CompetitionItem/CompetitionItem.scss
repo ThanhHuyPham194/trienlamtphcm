@@ -1,0 +1,62 @@
+@import "../../scss/import.scss";
+.competition-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $blue-cl;
+  padding: 15px 0;
+  &__date {
+    color: $gray-cl;
+    font-size: $sz-small-text;
+    p {
+      margin-top: 8px;
+    }
+  }
+  &__name {
+    max-width: 485px;
+    p {
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 24px;
+    }
+  }
+  &__img {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    .overlay {
+      background: linear-gradient(
+        to right,
+        fade_out(#fff, 1) 0%,
+        fade_out(#fff, 0.7) 100%
+      );
+      content: "";
+      display: block;
+      height: 100%;
+      left: -75%;
+      position: absolute;
+      top: 0;
+      transform: skewX(-25deg);
+      width: 50%;
+      z-index: 2;
+      animation: shine 3s linear infinite;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  80% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}

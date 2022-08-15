@@ -1,0 +1,26 @@
+@import "../../scss/import.scss";
+.border-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+  pointer-events: none;
+  &.--first {
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(to right, white 20%, $blue-cl) 1;
+  }
+  &.--second {
+    border-right: 3px solid transparent;
+    border-image: linear-gradient(to top, white 20%, $blue-cl) 1;
+  }
+  &.--third {
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to left, white 20%, $blue-cl) 1;
+  }
+  &.--fourth {
+    border-left: 3px solid transparent;
+    border-image: linear-gradient(to bottom, white 20%, $blue-cl) 1;
+  }
+}

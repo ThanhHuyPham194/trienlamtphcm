@@ -1,0 +1,99 @@
+@import "../../scss/import.scss";
+.history {
+  .main-title {
+    margin-top: 160px;
+  }
+  &__info {
+    margin-top: 80px;
+    margin-bottom: 120px;
+    position: relative;
+    .img {
+      width: 588px;
+      height: 412px;
+      margin-left: auto;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .text {
+      position: absolute;
+      width: 566px;
+      height: 284px;
+      top: 50%;
+      right: 30%;
+      background-color: white;
+      padding: 64px 40px;
+      transform: translateY(-50%);
+      box-shadow: -12px 13px 15px 0px rgba($blue-cl, 0.46);
+      -webkit-box-shadow: -12px 13px 15px 0px rgba($blue-cl, 0.46);
+      -moz-box-shadow: -12px 13px 15px 0px rgba($blue-cl, 0.46);
+      h2 {
+        line-height: 40px;
+        span {
+          display: block;
+        }
+      }
+      p {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  &__dropdown {
+    &--item {
+      border-left: 3px solid $blue-cl;
+      padding: 20px 0 20px 55px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .main {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        img.active {
+          transform: rotate(180deg);
+        }
+        p {
+          margin-left: 24px;
+        }
+      }
+      .sub {
+        .text {
+          margin-top: 30px;
+          margin-left: 38px;
+          font-size: $sz-small-text;
+          line-height: 25px;
+          animation: animDown 1s ease-in 1;
+
+        }
+      }
+    }
+  }
+  &__rule {
+    margin-top: 120px;
+    margin-bottom: 65px;
+    text-align: center;
+    p {
+      font-weight: 600;
+      &:nth-child(1){
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+@keyframes animDown {
+  0%{
+   opacity: 0;
+   transform: translateY(-50px);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

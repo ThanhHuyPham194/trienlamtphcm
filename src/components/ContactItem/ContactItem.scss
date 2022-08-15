@@ -1,0 +1,105 @@
+@import "../../scss/import.scss";
+.contact-item {
+  padding: 40px 0;
+  max-width: 588px;
+  margin: 0 auto;
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+    p {
+      font-weight: 500;
+      span {
+        margin-top: 10px;
+        display: block;
+      }
+    }
+  }
+  &__form {
+    form {
+      width: 100%;
+      .input:nth-child(3) {
+        .border-gradient.--third {
+          top: unset;
+          bottom: 1px;
+        }
+      }
+      .input {
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+        .border-gradient {
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.4s all linear;
+        }
+        .error {
+          position: absolute;
+          bottom: -15px;
+          left: 10px;
+          color: $blue-cl;
+          font-size: 12px;
+        }
+        input:focus,
+        textarea:focus {
+          color: $blue-cl;
+        }
+        input:focus::placeholder,
+        textarea:focus::placeholder {
+          transition: 0.4s all linear;
+          color: $blue-cl;
+        }
+        input:focus ~ .border-gradient {
+          opacity: 1;
+          visibility: visible;
+        }
+        textarea:focus ~ .border-gradient {
+          opacity: 1;
+          visibility: visible;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        /* Firefox */
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
+        input,
+        textarea {
+          border: none;
+          width: 100%;
+          padding: 14px;
+          border: 1px solid $dark-gray-cl;
+          outline: none;
+          font-size: 14px;
+        }
+        textarea {
+          height: 120px;
+          resize: none;
+        }
+        &.--wrap {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          column-gap: 24px;
+          .left,
+          .right {
+            width: 100%;
+            height: 100%;
+            position: relative;
+          }
+        }
+      }
+      .button {
+        text-align: center;
+        width: 100%;
+        margin-top: 30px;
+        button {
+          background-color: transparent;
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
+}

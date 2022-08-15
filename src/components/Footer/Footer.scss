@@ -1,0 +1,59 @@
+@import "../../scss/import.scss";
+.footer {
+  .main-wrapper {
+    .contact {
+      display: flex;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      border-top: 0.5px solid #808080;
+      border-bottom: 0.5px solid #808080;
+
+      gap: 32px;
+      span {
+        font-weight: 500;
+        font-size: $sz-small-text;
+      }
+      &-left {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        &-item {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+        }
+      }
+      &-right {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        &-item {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          p {
+            font-weight: 500;
+            font-size: 14px;
+            span {
+              margin-left: 22px;
+              display: inline-block;
+              font-weight: 500;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .space {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../scss/import.scss";
+.contact {
+  
+  .main-title {
+    margin-bottom: 16px;
+  }
+  &__wrapper {
+    background: url("../../assets/images/Contact/background.png") center center
+    no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+  &__title {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 64px;
+    p:nth-child(2) {
+      margin: 24px 0;
+      text-transform: uppercase;
+      color: $gray-cl;
+    }
+    p:nth-child(3) {
+      color: $gray-cl;
+      span {
+        color: $black-cl;
+        font-weight: 700;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .group {
+      text-align: center;
+      img {
+        width: 38px;
+        height: 38px;
+        object-fit: cover;
+      }
+      .name {
+        margin-top: 14px;
+        margin-bottom: 8px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .text {
+        font-weight: 500;
+        font-size: $sz-small-text;
+        color: $gray-cl;
+        line-height: 20px;
+      }
+    }
+    .group:nth-child(2) {
+      max-width: 356px;
+    }
+  }
+  &__map {
+    width: 100%;
+    height: 420px;
+    margin-top: 64px;
+    margin-bottom: 120px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

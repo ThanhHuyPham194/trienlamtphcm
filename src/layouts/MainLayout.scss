@@ -1,0 +1,93 @@
+@import '../scss/import.scss';
+.outlet{
+    margin-top: 120px;
+}
+// .scrollToTop {
+//     cursor: pointer;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: max-content;
+//     background-color: transparent;
+//     border-radius: 100%;
+//     position: fixed;
+//     bottom: 24px;
+//     right: calc((100% - 1440px)/2 );
+// }
+
+// .round {
+//     position: relative;
+//     border: 2px solid $blue-cl;
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 100%;    
+//     transform: rotate(-180deg);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .round-item {
+//     z-index: 999;
+//     height: 2px;
+//     margin:1px;
+//     width: 16px;
+//     background: $blue-cl;
+//     transition: 0.4s ease;
+// }
+
+// .round-item:first-child {
+//     display: block;
+//     position: absolute;
+//     transform: rotate(45deg);
+//     left: 10%;
+//     bottom: 30%;
+// }
+
+// .round-item:nth-child(2) {
+//     display: block;
+//     position: absolute;
+//     transform: rotate(-45deg);
+//     left: 40%;
+//     bottom: 30%;
+// }
+
+// .round-item:nth-child(3) {
+//     display: block;
+//     position: absolute;
+//     transform: rotate(45deg);
+//     left: 10%;
+//     bottom: 54%;
+// }
+
+// .round-item:nth-child(4) {
+//     display: block;
+//     position: absolute;
+//     transform: rotate(-45deg);
+//     left: 40%;
+//     bottom: 54%;
+// }
+
+// .round:hover .round-item:nth-child(1) {
+//     transform: rotate(-135deg);
+// }
+
+// .round:hover .round-item:nth-child(2) {
+//     transform: rotate(135deg);
+// }
+
+// .round:hover .round-item:nth-child(3) {
+//     transform: rotate(225deg);
+// }
+
+// .round:hover .round-item:nth-child(4) {
+//     transform: rotate(-225deg);
+// }
+@keyframes growth {
+    0%{
+        transform: translateX(0) rotate(-90deg);
+    }
+    100%{
+        transform: translateX(32px) rotate(-90deg);
+    }
+}
